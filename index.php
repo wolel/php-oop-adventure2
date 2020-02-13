@@ -6,6 +6,7 @@
  * Time: 10:41
  */
 require "classes/personnage.php";
+require "classes/dragon.php";
 
 session_start();
 
@@ -18,57 +19,17 @@ else {
     $_SESSION['personnage'] = $personnage;
 }
 
-$move = $_POST['move'];
-echo $move;
-
-switch($move)
-{
-    case "top":
-        $personnage->moveTop();
-        break;
-    case "left":
-        $personnage->moveLeft();
-        break;
-    case "right":
-        $personnage->moveRight();
-        break;
-    case "bottom":
-        $personnage->moveBottom();
-        break;
-}
+include "controllers/main.php";
 
 $position = $personnage->getPosition();
-echo $position['x']."/".$position['y'];
 
+// Partie test
 
-$action = $_POST['action'];
-echo $action;
+    $dragon = new dragon();
+    $dragon->testAction();
+    print_r($dragon->getActions());
 
+//
+include "views/main.php";
 ?>
 
-
-<div id="container">
-
-    <div id="display">
-
-    </div>
-
-    <div id="controls">
-        <form method="post" class="form">
-            <div>
-                <button name="move" value="top">^</button>
-                <button name="move" value="left"><</button>
-                <button name="move" value="right">></button>
-                <button name="move" value="bottom">V</button>
-            </div>
-            <div>
-                <select name="action">
-                    <option value="" selected></option>
-                    <option value="attack">Attaquer</option>
-                </select>
-                <input type="submit" value="Envoyer">
-            </div>
-        </form>
-    </div>
-
-</div>

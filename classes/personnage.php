@@ -8,8 +8,12 @@
 
 class personnage {
 
-    private $x=0;
-    private $y=0;
+    protected $x=0;
+    protected $y=0;
+    protected $actionsList = [];
+    protected $nom;
+
+    // Propriété nom et on va définir un setter et un getter
 
     public function __construct()
     {
@@ -20,6 +24,7 @@ class personnage {
     {
         if($this->checkMoveY()) {
             $this->y = $this->y - 1;
+            $this->addAction();
         }
     }
 
@@ -27,17 +32,20 @@ class personnage {
     {
         if($this->checkMoveX()) {
             $this->x = $this->x - 1;
+            $this->addAction();
         }
     }
 
     public function moveRight()
     {
         $this->x = $this->x + 1;
+        $this->addAction();
     }
 
     public function moveBottom()
     {
         $this->y = $this->y + 1;
+        $this->addAction();
     }
 
     public function getPosition()
@@ -46,6 +54,16 @@ class personnage {
             "x"=>$this->x,
             "y"=>$this->y
         ];
+    }
+
+    public function getActions()
+    {
+        return $this->actionsList;
+    }
+
+    private function addAction()
+    {
+        $this->actionsList[] = "Votre personnage se déplace en ".$this->x."/".$this->y;
     }
 
     private function checkMoveX()
