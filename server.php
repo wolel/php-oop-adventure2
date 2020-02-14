@@ -8,6 +8,6 @@ $dbname = "espacecom";
 $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     echo 'Connection failed' . $conn->connect_error;
-} else {
+}else {
     //echo 'Connection OK'.$conn->select_db($dbname);
 }

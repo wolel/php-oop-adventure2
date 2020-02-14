@@ -7,6 +7,7 @@
         <title>Formulaire</title>
         <meta name="viewport" content="width=device-width, user-scalable=1">
         <link rel="stylesheet" href="css/pg_inscription.css">
+        <script src="angular/angular.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
 
     </head>

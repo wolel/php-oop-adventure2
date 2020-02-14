@@ -5,7 +5,7 @@ require 'header.html';?>
 
     <form action="index.php" method="post">
         <input type="submit" value=" vers le JEUX" name="submit1" id="submit1">
-    </form>
+
 
 <?php
 //------------------------------------------si le NOM n'est pas marqué-------------------------
@@ -39,4 +39,5 @@ if(empty($_POST['LastName'])){
 
 
 require 'footer.html';
-
+?>
+    </form>
