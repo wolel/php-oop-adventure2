@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style_jeux.css">
+<link rel="stylesheet" href="css/style_jeux.css">
 
 <?php
 require 'header.html';
@@ -9,7 +9,7 @@ require 'header.html';
  * Time: 10:41
  */
 ?>
-<form action="user.php" method="post"><?php
+<form action="user.php" method="post" id="formJeux"><?php
 
 require "traits/personnageUtils.php";
 require "classes/personnage.php";
@@ -74,8 +74,17 @@ require 'footer.html';
 ?>
 
 <!--==================================================================================-->
-</form>
-<form action="formulaire.php" method="post">
-    <input type="submit" value=" <= Retour page inscription" name="submit1" id="submit1">
-</form>
+    </form>
+        <form action="formulaire.php" method="post" id="formRetourInscr">
+        <input type="submit" value=" <= Retour page inscription" name="submit1" id="submit1">
+    </form>
 
+    <form action="page_membre.php" method="post" id="formComm">
+        <label>Acces au forum de commentaires
+        Pseudo:     <input type="text" name="pseudo" id="pseudo" placeholder="pseudo" required>
+        Password:   <input type="password" name="pass" id="pass">
+        <a href="page_membre.php"><button type="submit"></button></a>
+        </label>
+    </form>
+
+<!--ouvrir avec une requete AJAX le forum 'page_membre'sur la meme page-->

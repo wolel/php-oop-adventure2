@@ -6,8 +6,8 @@
         <meta charset="UTF-8">
         <title>Formulaire</title>
         <meta name="viewport" content="width=device-width, user-scalable=1">
-        <link rel="stylesheet" href="pg_inscription.css">
-
+        <link rel="stylesheet" href="css/pg_inscription.css">
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
@@ -40,6 +40,10 @@
         <input type="submit" name="Valider" value="valider" id="submit">
     </form>
 
+
+
+
+    <script src="index.js"></script>
     </body>
     </html>
 <?php echo "<br>";

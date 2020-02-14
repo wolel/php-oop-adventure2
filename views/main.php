@@ -23,19 +23,19 @@
     </div>
 
     <div id="controls">
-        <form method="post" class="form">
+        <form method="post" class="form" id="formBtn">
             <div>
-                <button name="move" value="top">^</button>
-                <button name="move" value="left"><</button>
-                <button name="move" value="right">></button>
-                <button name="move" value="bottom">V</button>
-            </div>
-            <div>
+                <button name="move" value="top">UP</button>
+                <button name="move" value="left">LEFT</button>
+                <button name="move" value="right">RIGHT</button>
+                <button name="move" value="bottom">DOWN</button>
+                <!--<input type="submit" value="Envoyer">-->
+
                 <select name="action">
                     <option value="" selected></option>
                     <option value="attack">Attaquer</option>
                 </select>
-                <input type="submit" value="Envoyer">
+
             </div>
         </form>
     </div>

@@ -1,6 +1,6 @@
 <?php
 require 'header.html';?>
-    <link rel="stylesheet" href="pg_inscription.css">
+    <link rel="stylesheet" href="css/pg_inscription.css">
 
 
     <form action="index.php" method="post">
