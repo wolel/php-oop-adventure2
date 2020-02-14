@@ -1,0 +1,98 @@
+*{box-sizing: border-box;}
+body{
+    font-family: "Open Sans", serif;
+    padding: 0;
+    margin: 0;
+}
+
+header h1{
+    width: 100%;
+    background-color: #87d557;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+form{
+    width: 600px;
+    height: 600px;
+    padding: 60px;
+    border: 2px solid #87d557;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius:20px ;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+}
+form input{
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    float: right;
+}
+form label{
+    display: inline-block;
+}
+
+form select{
+    display: block;
+    padding: 10px 30px 10px 30px;
+    margin-left: 70px;
+
+}
+
+input[type=submit]{
+     margin-top: 60px;
+     padding: 20px;
+     background-color: #87d557;
+     color: white;
+     font-weight: bold;
+     letter-spacing: 2px;
+     border: none;
+     transform: scale(1);
+     cursor: pointer;
+ }
+form input[type=submit1]{
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #87d557;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    transform: scale(1);
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #95e95f;
+
+}
+input[type=submit]:active{
+    transform: scale(.95);
+
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+}
+footer div{
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 20px;
+
+}
